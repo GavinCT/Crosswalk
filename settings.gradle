@@ -1,1 +1,1 @@
-include 'Sample', 'XwalkCoreLibrary'
+include 'Sample', 'XwalkCoreLibrary', 'XWalkCoreLibrary'
