@@ -38,8 +38,8 @@ install {
                 // Set your license
                 licenses {
                     license {
-                        name 'New BSD'
-                        url 'http://opensource.org/licenses/BSD-3-Clause'
+                        name 'The Apache Software License, Version 2.0'
+                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
                     }
                 }
                 developers {
@@ -62,16 +62,16 @@ task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
     classifier = 'sources'
 }
-/*task javadoc(type: Javadoc) {
+task javadoc(type: Javadoc) {
     source = android.sourceSets.main.java.srcDirs
     classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
 }
 task javadocJar(type: Jar, dependsOn: javadoc) {
     classifier = 'javadoc'
     from javadoc.destinationDir
-}*/
+}
 artifacts {
-    /*archives javadocJar*/
+    archives javadocJar
     archives sourcesJar
 }
 Properties properties = new Properties()
@@ -85,7 +85,7 @@ bintray {
         name = "CrosswalkLibrary"	//发布到JCenter上的项目名字
         websiteUrl = siteUrl
         vcsUrl = gitUrl
-        licenses = ["New BSD"]
+        licenses = ["Apache-2.0"]
         publish = true
     }
 }
