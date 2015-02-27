@@ -44,7 +44,7 @@ install {
                 }
                 developers {
                     developer {
-                        id 'chentong'		//填写的一些基本信息
+                        id 'GavinCT'		//填写的一些基本信息
                         name 'chentong'
                         email 'chentong.think@gmail.com'
                     }
