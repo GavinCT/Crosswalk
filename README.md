@@ -8,7 +8,7 @@ Crosswalk 9.38.208.10 和 10.39.235.15 在MX3 flyme3.5.2 编辑html的时候有b
 此代码库是基于Crosswalk 8.37.189.12。在各已知手机上编辑表现正常。  
 
 ## Usage 
-```
+```groovy
 dependencies {
     compile 'com.czt.crosswalk:CrosswalkLibrary:8.37.189.12@aar'
 }
